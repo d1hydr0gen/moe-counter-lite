@@ -1,6 +1,6 @@
 # Moe Counter Lite
 Moe Counter Lite is recoded version of Moe-Counter with Improvments.<br>
-It can handle averge 200 to 400 requests per seconds under 10-90ms(depends machine spec)<br>
+It can handle averge 200 to 300 requests per seconds under 10-90ms(depends machine spec)<br>
 I run Performance-Test for 30seconds and count reached 7500, averge responce time is 20ms.<br>
 # How To Install
 Download from github:<br>
