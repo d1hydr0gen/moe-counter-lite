@@ -3,9 +3,14 @@ Moe Counter Lite is recoded version of Moe-Counter with Improvments.<br>
 It can handle averge 200 to 400 requests per seconds under 10-90ms(depends machine spec)<br>
 I run Performance-Test for 30seconds and count reached 7500, averge responce time is 20ms.<br>
 # How To Install
-Run This Commad: git clone https://github.com/d1hydr0gen/moe-counter-lite.git<br> 
-Done! You can open webserver.py with your favorite editor to configure setting :D <br>
-to start this, run: screen python3 webserver.py
+Download from github:
+```git clone https://github.com/d1hydr0gen/moe-counter-lite.git```
+Install Dependencies:
+```npm install http url fs querystring sqlite3 xml2js base-64 mime```
+Edit Configuration (if you want)
+```nano moe.js```
+Run ( recommended to use screen ):
+```screen node moe.js```
 # Only 1 theme?
 Sadly Yes. but You can add theme easly.
 open themes.json and add this
