@@ -1,0 +1,19 @@
+{
+    "themes": [
+        {
+            "name": "gelbooru",
+            "letters":{
+                "0":"assets/gelbooru/0.gif",
+                "1":"assets/gelbooru/1.gif",
+                "2":"assets/gelbooru/2.gif",
+                "3":"assets/gelbooru/3.gif",
+                "4":"assets/gelbooru/4.gif",
+                "5":"assets/gelbooru/5.gif",
+                "6":"assets/gelbooru/6.gif",
+                "7":"assets/gelbooru/7.gif",
+                "8":"assets/gelbooru/8.gif",
+                "9":"assets/gelbooru/9.gif"
+            }
+        }
+    ]
+}

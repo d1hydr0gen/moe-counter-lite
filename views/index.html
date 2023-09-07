@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MoeCounterLite</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            var url = window.location.protocol + "//" + window.location.host;
+            window.addEventListener("load", (event) => {
+                document.getElementById("img").src = url + "/get/index";
+                document.getElementById("usage").innerHTML = "&lt; img id=\"img\" src=\"" + document.getElementById("img").src + "\" height=\"100\" width=\"315\" &gt;";
+            });
+        </script>
+    </head>
+    <body class="h-screen w-screen flex flex-col justify-center bg-stone-50">
+        <div class="h-2/3 p-4">
+            <h1 class="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-800 to-orange-600">Moe Counter Lite</h1>
+            <div class="flex gap-2">
+                <div class="text-3xl text-stone-800 flex">Next</div>
+                <div class="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-800 to-orange-600">Generation</div>
+                <div class="text-3xl text-stone-800 flex">Access</div>
+                <div class="text-3xl text-stone-800 flex">Counter</div>
+            </div>
+            <div class="text-xl text-stone-800 mt-5">
+                <p>Thanks for using MoeCounterLite!</p>
+                <p class="flex gap-2">GitHub: <a class="text-blue-800 underline" href="https://github.com/d1hydr0gen/moe-counter-lite">d1hydr0gen/moe-counter-lite</a></p>
+                <p>Moe Counter Lite can handle averge 200 to 300 requests per seconds without lags.</p>
+                <img id="img" src="" height="100" width="315">
+            </div>
+            <div class="text-xl text-stone-800 mt-5">
+                <p>To Use MoeCounterLite, embed this to your website.</p>
+                <div class="border-l-2 border-stone-800 flex p-2" id="usage">
+                    
+                </div>
+                <p>* Replace "index" as counter name</p>
+            </div>
+            <div class="text-xl text-stone-800 mt-5">
+                <p>&copy; 2023 D1HYDR0GEN</p>
+                <p>Credit: Gelbooru</p>
+            </div>
+        </div>
+    </body>
+</html>
