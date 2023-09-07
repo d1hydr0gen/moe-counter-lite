@@ -135,11 +135,7 @@ function update() {
 }
 
 function getThemeIdByName(name) {
-    const theme = themes.findIndex(theme => theme.name === name);
-    if(!theme){
-        theme = getThemeIdByName(default_theme);
-    }
-    return theme;
+    return themes.findIndex(theme => theme.name === name);
 }
 
 function count(id) {
@@ -149,14 +145,14 @@ function count(id) {
             counter.count += 1;
             console.log(id + " " + counter.count);
         }
-        return counter.svg[getThemeIdByName(theme)];
+        return counter.svg[0];
     }
     const newCounter = new Counter(id, 1);
     counters.push(newCounter);
     const svgs = themes.map(theme => createSvg(1, theme));
     newCounter.svg = svgs;
     console.log(id + " " + newCounter.count);
-    return newCounter.svg[getThemeIdByName(theme)];
+    return newCounter.svg[0];
 }
 
 const server = http.createServer((req, res) => {
@@ -176,7 +172,7 @@ const server = http.createServer((req, res) => {
     } else if (/^\/get\/\w+/.test(parsedUrl.pathname)) {
         const name = parsedUrl.pathname.split('/').pop().split('?')[0];
         res.writeHead(200, { 'Content-Type': 'image/svg+xml' });
-        res.end(String(count(name,queryParameters["theme"])));
+        res.end(String(count(name)));
     } else {
         res.writeHead(404, { 'Content-Type': 'text/plain' });
         res.end('Not Found');
