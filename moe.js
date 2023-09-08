@@ -124,7 +124,9 @@ function update() {
             const id = counter.id;
             const count = counter.count;
             const db = new sqlite3.Database(database);
-            db.run('UPDATE count SET count = ? WHERE id = ?', [count, id], err => {
+
+            // Use the INSERT OR REPLACE INTO statement to update or insert a record.
+            db.run('INSERT OR REPLACE INTO count (id, count) VALUES (?, ?)', [id, count], err => {
                 if (err) {
                     console.error(err.message);
                 }
@@ -133,6 +135,7 @@ function update() {
         });
     }, duration * 1000);
 }
+
 
 function getThemeIdByName(name) {
     const themeIndex = themes.findIndex(theme => theme.name === name);
