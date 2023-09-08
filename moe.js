@@ -124,8 +124,6 @@ function update() {
             const id = counter.id;
             const count = counter.count;
             const db = new sqlite3.Database(database);
-
-            // Use the INSERT OR REPLACE INTO statement to update or insert a record.
             db.run('INSERT OR REPLACE INTO count (id, count) VALUES (?, ?)', [id, count], err => {
                 if (err) {
                     console.error(err.message);
@@ -140,9 +138,9 @@ function update() {
 function getThemeIdByName(name) {
     const themeIndex = themes.findIndex(theme => theme.name === name);
     if (themeIndex !== -1) {
-        return themeIndex; // テーマが見つかった場合、インデックスを返す
+        return themeIndex;
     } else {
-        return getThemeIdByName(default_theme); // デフォルトテーマを検索する
+        return getThemeIdByName(default_theme);
     }
 }
 
