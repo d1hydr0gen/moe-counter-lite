@@ -12,7 +12,7 @@ Edit Configuration (if you want):<br>
 ```nano moe.js```<br>
 Run ( recommended to use screen ):<br>
 ```screen node moe.js```<br>
-# Only 1 theme?
+# Only ２ theme?
 Sadly Yes. but You can add theme easly.
 open themes.json and add this
 ```
