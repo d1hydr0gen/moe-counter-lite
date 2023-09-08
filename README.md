@@ -13,6 +13,11 @@ Edit Configuration (if you want):<br>
 Run ( recommended to use screen ):<br>
 ```screen node moe.js```<br>
 WE ONLY TESTED THIS IN v18.13.0 and v20.6.0<br>
+# How to fix "Mixed Content" error?
+It's browser side error occurred for load HTTP content from HTTPS page.
+To Fix this, you can use proxy server (nginx for example) and apply SSL Ceritification or Use Cloudflare's Proxy to get SSL Ceritification.<br>
+If someone knows way to support SSL in node.js's http server let me know :D
+
 # Only ２ theme?
 Sadly Yes. but You can add theme easly.
 open themes.json and add this
