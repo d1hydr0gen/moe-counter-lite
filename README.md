@@ -12,7 +12,7 @@ Edit Configuration (if you want):<br>
 ```nano moe.js```<br>
 Run ( recommended to use screen ):<br>
 ```screen node moe.js```<br>
-WE ONLY TESTED THIS IN NodeJS v20.6.0<br>
+WE ONLY TESTED THIS IN v18.13.0 and v20.6.0<br>
 # Only ２ theme?
 Sadly Yes. but You can add theme easly.
 open themes.json and add this
