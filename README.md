@@ -39,6 +39,7 @@ open themes.json and add this
 ```
 Done. Make it sure you added theme to assets folder.<br>
 Please use 45x100(9:20) Images.<br>
-You can test the access counter at:　https://www.mclite.xyz<br>
+You can test the access counter at:　https://counter.yoczit.com<br>
+
 
 * I recommend to host it your self when you use it!
