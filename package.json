@@ -1,0 +1,23 @@
+{
+  "name": "moe-counter-lite",
+  "version": "1.0.0",
+  "description": "now this wont work idk why but something sh*t happend i think. i hope someone fix it lmafo i got error on require('mime') and it says change to import() but i got error \"getType() is not function\" error, so sucks. i hate nodejs. its so f**king bad.",
+  "main": "moe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "mime": "^4.0.3",
+    "querystring": "^0.2.1",
+    "sqlite3": "^5.1.7",
+    "url": "^0.11.3",
+    "xml2js": "^0.6.2"
+  },
+  "type": "module"
+}
