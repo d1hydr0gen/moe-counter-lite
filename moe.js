@@ -1,11 +1,9 @@
-const http = require('http');
-const url = require('url');
-const fs = require('fs');
-const querystring = require('querystring');
-const sqlite3 = require('sqlite3');
-const xml2js = require('xml2js');
-const base64 = require('base-64');
-const mime = require('mime');
+import http from "http";
+import url from "url";
+import * as fs from "fs";
+import querystring from "querystring";
+import sqlite3 from "sqlite3";
+import mime from "mime";
 
 // DO NOT CHANGE THIS
 const counters = [];
@@ -84,7 +82,7 @@ function encodeFileToBase64(file_path) {
 
 
 function initTheme() {
-    const themeData = require('./themes.json');
+    const themeData = JSON.parse(fs.readFileSync('./themes.json'));
     themeData.themes.forEach(theme => {
         const themeObj = new Theme(theme.name);
         for (const [key, value] of Object.entries(theme.letters)) {

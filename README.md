@@ -18,12 +18,12 @@ It is 10x Faster than original Moe-Counter *This result is based on running the 
 Download from github:<br>
 ```git clone https://github.com/d1hydr0gen/moe-counter-lite.git```<br>
 Install Dependencies:<br>
-```npm install http url fs querystring sqlite3 xml2js base-64 mime```<br>
+```npm i```<br>
 Edit Configuration (if you want):<br>
 ```nano moe.js```<br>
-Run ( recommended to use screen ):<br>
-```screen node moe.js```<br>
-WE ONLY TESTED THIS IN v18.13.0 and v20.6.0<br>
+Run:<br>
+```node moe.js```<br>
+WE ONLY TESTED THIS IN Node VERSIONS from v18.13.0 up to 21.7.3<br>
 # How to fix "Mixed Content" error?
 It's browser side error occurred for load HTTP content from HTTPS page.
 To Fix this, you can use proxy server (nginx for example) and apply SSL Ceritification or Use Cloudflare's Proxy to get SSL Ceritification.<br>
