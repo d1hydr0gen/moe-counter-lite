@@ -1,14 +1,3 @@
-# OUTDATED!
-now this wont work idk why but something sh*t happend i think.
-i hope someone fix it lmafo
-i got error on require('mime') and it says change to import() but i got error "getType() is not function" error, so sucks.
-i hate nodejs. its so f**king bad. 
-
-i stop updating this. ill never update this.
-dont use this. bye
-
-
-
 # Moe Counter Lite
 Moe Counter Lite is recoded version of Moe-Counter with Improvments.<br>
 It can handle averge 12,550 requests per seconds under 10-90ms response time(depends machine spec)<br>
@@ -53,3 +42,6 @@ Please use 45x100(9:20) Images.<br>
 
 
 * I recommend to host it your self when you use it!
+
+
+Tysm to all contributors!
